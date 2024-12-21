@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+Route::redirect('/', 'dashboard/login');
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +15,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/* Route::get('/', function () {
     return view('welcome');
-});
+}); */
