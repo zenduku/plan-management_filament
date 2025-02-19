@@ -12,9 +12,7 @@ class State extends Model
     protected $fillable = [
         'name'
     ];
-    /**
-     * Relación con los detalles del cliente
-     */
+
     public function clientDetails(): HasMany
     {
         return $this->hasMany(ClientDetail::class);
